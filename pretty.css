@@ -1,67 +1,103 @@
-body {
-    font-family: Arial, sans-serif;
+git /* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-.tab button:hover {
-    background-color: #ddd;
-}
-
-.tab button.active {
-    background-color: #ccc;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-h3 {
+    box-sizing: border-box;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     color: #333;
-}
-
-.linkedin-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #0077b5; /* LinkedIn brand color */
-    color: white;
-    border: none;
-    border-radius: 5px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-logo {
+    color: #fff;
+    font-size: 1.5em;
     text-decoration: none;
-}
-
-.linkedin-button:hover {
-    background-color: #0092fb;
-}
-
-.linkedin-button i { 
-    margin-right: 8px; 
-    vertical-align: middle; 
-}
-
-.tabcontent2 {
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 4em 2em;
+    margin: 2em auto;
     text-align: center;
-}
+    max-width: 800px;
+  }
+  
+  #home {
+    background: #f4f4f4;
+  }
+  
+  #about, #portfolio, #contact {
+    background: #ffffff;
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

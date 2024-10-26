@@ -1,74 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="pretty.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Personal Website</title>
+  <link rel="stylesheet" href="pretty.css">
 </head>
 <body>
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'About')">About Me</button>
-        <button class="tablinks" onclick="openTab(event, 'Projects')">Projects/Previous Work</button>
-        <button class="tablinks" onclick="openTab(event, 'Contact')">Contact Me</button>
-    </div>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="nav-logo">Justin Yang</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div id="About" class="tabcontent">
-        <h3>About Me</h3>
-        <p>Hello, I am Justin Yang!</p>
-        <p>I am currently a Senior studying Computer Engineering
-            with a concentration in Embedded Systems! I am currently
-            looking for Field Application Engineering Positions along
-            with HWE and SWE roles.
-        </p>
-        <img src="/Users/justinyang/Downloads/Profile pic.jpeg" width="200" height="200">
-        <h3>Activities/Hobbies</h3>
-        <style> 
-            .centered-list { 
-              text-align: center; 
-            } 
-          </style> 
-        <ul>
-            <li>Play Badminton</li>
-            <img src="/Users/justinyang/Downloads/279283251_4633244546312_2511127012858712245_n.jpg" width="200" height="200" class="center">
-            <li> Joy rides on my EBoard </li>
-            <img src="/Users/justinyang/Downloads/download (3).jpeg" width="200" height="200">
-            <li>Eating</li>
-          </ul>  
-          
+  <!-- Main Content -->
+  <main>
+    <section id="home" class="section">
+      <h1 class="fade-in">Welcome to My Website</h1>
+      <p class="fade-in">I'm a Web Developer.</p>
+    </section>
 
-    </div>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>Information about you goes here.</p>
+    </section>
 
-    <div id="Projects" class="tabcontent">
-        <h3>Projects/Previous Work</h3>
-        <p>Here is a list of my past projects and work.</p>
-        <ul>
-            <li><b>CubeWorks Inc, Electrical Engineering Intern</b></li>
-            <ul>
-                <li>Conducted electrical testing of low-power electronic components and systems.</li>
-                <li>Operated test stations and compiling data to generated tables and plots..</li>
-                <li>Identified possible causes for anomalous behavior.</li>
-                <li>Composed concise presentation slides biweekly for progress update to core engineering team</li>
-            </ul>
-            <li><b>Infineon GO: Smart Car Entry System</b></li>
-            <ul>
-                <li>Designed 3 modules with Bluetooth Mesh capabilities allowing functionality to H-Bridge, LCD SPI Display, and Audio
-                    Controls</li>
-                <li>Implemented robust, testable, reusable, and sustainable FreeRTOS code tailored for H-Bridge, LCD SPI Display, and
-                    Audio controls.</li>
-                <li>Developed iOS app and interfaces using Swift to establish Bluetooth Mesh connection between modules and phone.</li>
-                <li>Collaborated with Infineon team in biweekly meeting for build verification and progress update.m</li>
-            </ul>
-            <img src="/Users/justinyang/Downloads/Infineon.jpeg" width="200" height="200" class="center">
+    <section id="portfolio" class="section">
+      <h2>My Work</h2>
+      <p>Showcase your projects here.</p>
+    </section>
 
-          </ul>  
-    </div>
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p>Get in touch with me here.</p>
+    </section>
+  </main>
 
-    <div id="Contact" class="tabcontent">
-        <h3>Contact Me</h3>
-        <p>Feel free to reach out via email at: yangjust@umich.edu </p>
-        <a href="https://www.linkedin.com/in/justin-yang-8271971a7/" target="_blank" class="linkedin-button"><i class="fab fa-linkedin"></i> Visit my LinkedIn</a>    </div>
-
-    <script src="butoons.js"></script>
+  <script src="butoons.js"></script>
 </body>
 </html>

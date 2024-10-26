@@ -1,18 +1,26 @@
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.tablinks').click();
-});
+// Smooth Scrolling for Navbar Links
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default jump
+      const sectionId = link.getAttribute('href').substring(1);
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+  // Intersection Observer for Scroll Animations
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeInElements = document.querySelectorAll('.fade-in, .slide-in-left');
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate'); // Add animation class
+        }
+      });
+    }, { threshold: 0.5 }); // Trigger at 50% visibility
+    
+    fadeInElements.forEach(element => observer.observe(element));
+  });
+  

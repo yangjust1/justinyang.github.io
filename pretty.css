@@ -106,3 +106,63 @@
     }
   }
   
+  .linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0077b5;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.linkedin-button:hover {
+    background-color: #005582;
+}
+
+.linkedin-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.umich-button{
+  display: inline-flex;
+  align-items: center;
+  background-color: #9ab500;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.umich-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.fun-button{
+  display: inline-flex;
+  align-items: center;
+  background-color: #9ab500;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.fun-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}

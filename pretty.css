@@ -61,6 +61,32 @@
     max-width: 800px;
   }
   
+  .section2{
+    padding: 4em 2em;
+    margin: 2em auto;
+    text-align: center;
+    max-width: 800px;
+    img{
+      border-radius: 150px;
+    }
+  }
+
+  .section3{
+    padding: 4em 2em;
+    margin: 2em auto;
+    text-align: center;
+    max-width: 800px;
+    img{
+      border-radius: 150px;
+    }
+  }
+  .section4{
+    padding: 1em 2em;
+    margin: 2em auto;
+    text-align: center;
+    max-width: 800px;
+  }
+
   #home {
     background: #f4f4f4;
   

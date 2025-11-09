@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Personal Website</title>
-    <link rel="stylesheet" href="pretty.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hobbies & Interests — Justin Yang</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pretty.css">
+  <link rel="stylesheet" href="aboutMe.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <a href="#home" class="nav-logo">Justin Yang</a>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main">
+      <a href="index.html" class="nav-logo">Justin Yang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutMe.html">About</a></li>
+        <li><a href="index.html#courses">Work</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <section id="courses" class="section4">
-        <h2>Hobbies/Interest</h2>
-        <img src="construction.jpeg" width="300" height="300">
+  <main>
+    <section class="section" aria-labelledby="fun-title">
+      <h1 id="fun-title" class="fade-in animate-on-scroll">Hobbies & Interests</h1>
+      <p class="fade-in animate-on-scroll">When I'm not coding or working on embedded systems I enjoy:</p>
 
+      <ul class="jobs-grid">
+        <li class="job-card fade-in animate-on-scroll">
+          <strong>Badminton</strong>
+          <div class="job-meta"><span>Ex-USA Badminton Junior Player, but still enjoy competing. </span></div>
+        </li>
+
+        <li class="job-card fade-in animate-on-scroll">
+          <strong>Learning Chinese </strong>
+          <div class="job-meta"><span>I hope to build a stronger connection with my culture and won't feel left out in conversations </span></div>
+        </li>
+
+        <li class="job-card fade-in animate-on-scroll">
+          <strong>Cooking & Food</strong>
+          <div class="job-meta"><span>Trying recipes and sharing meals with friends, especially love cooking Canto dishes</span></div>
+        </li>
+
+        <li class="job-card fade-in animate-on-scroll">
+          <strong>Games</strong>
+          <div class="job-meta"><span>Co-Op games with friends are always the best.</span></div>
+        </li>
+      </ul>
+
+      <div class="fade-in animate-on-scroll" style="margin-top:1.2rem;">
+        <img src="banana.png" alt="fun icon" style="width:56px;height:56px;vertical-align:middle;margin-right:0.6rem;">
+        <span style="color:var(--muted)">A little whimsy goes a long way — this site is a work in progress.</span>
+      </div>
     </section>
+  </main>
+
+  <script src="butoons.js" defer></script>
 </body>
 </html>

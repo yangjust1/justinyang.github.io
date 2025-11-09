@@ -1,0 +1,23 @@
+.hero-avatar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 9999px;
+    transition: transform 360ms ease;
+  }
+  
+  .section {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+  
+  @media (max-width:820px) {
+    .job-meta {
+      gap: 0.2rem;
+    }
+  }
+  
+  .section a {
+    color: #1e62d7;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }

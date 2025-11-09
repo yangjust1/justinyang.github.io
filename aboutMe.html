@@ -1,124 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Yang | Personal Website</title>
-    <link rel="stylesheet" href="pretty.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Justin Yang</title>
+
+  <!-- Font + site stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pretty.css">
+  <link rel="stylesheet" href="aboutMe.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="nav-logo">Justin Yang</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main">
+      <a href="index.html" class="nav-logo">Justin Yang</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#courses">Work</a></li>
+        <li><a href="fun.html">Hobbies</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about" class="section3">
-        <h2>About Me</h2>
-        <p>Graduated with the Class of 2024 from the University of Michigan with my B.S.E in Computer Engineering</p>
-        <img src="grad.png" width="300" height="300">
-        <p><b>"I stressed, I struggled, I cried, I prayed, I survived!"</b></p>
+  <main>
+    <section class="section section-hero" aria-labelledby="about-title">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 id="about-title" class="fade-in animate-on-scroll">About Me</h1>
+          <p class="lead fade-in animate-on-scroll">Hello — I'm Justin. I graduated from the University of Michigan with a B.S.E. in Computer Engineering (concentration in Embedded Systems & Software Engineering). I build embedded firmware, full-stack apps, and tools that bridge hardware and cloud services.</p>
+
+          <h3 class="fade-in animate-on-scroll">Education</h3>
+          <p class="fade-in animate-on-scroll">B.S.E., Computer Engineering — University of Michigan</p>
+
+          <h3 class="fade-in animate-on-scroll">Resume (SOON)</h3>
+          <!-- <p class="fade-in animate-on-scroll">Download: <a href="20241001-%20Resume(SWE)-%20Justin%20Yang.pdf" target="_blank" rel="noopener">20241001 - Resume (PDF)</a></p> -->
+
+          <div class="contact-buttons fade-in animate-on-scroll" role="group" aria-label="Contact links">
+            <a href="https://linkedin.com/in/justin-yang-8271971a7" target="_blank" class="linkedin-button" rel="noopener">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" class="linkedin-logo"> LinkedIn
+            </a>
+            <a href="https://github.com/yangjust1" target="_blank" class="github-button" rel="noopener">
+              <img src="github.png" alt="" class="github-logo"> GitHub
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-avatar fade-in animate-on-scroll" aria-hidden="false">
+          <img src="Me.jpg" alt="Justin Yang portrait" width="300" height="300">
+        </aside>
+      </div>
     </section>
 
-    <section id="courses" class="section4">
-      <h2>Relevant Courses Taken</h2>
-      <ul id="courses-list">
-          <li><b>EECS: 598</b>: Pervasive Computing Machine Learning
-              <ul>
-                  <li><b>Personal Insight:</b> Implemented a crowd monitoring machine learning model that detects emotions/actions while utilizing existing vibrational pattern data collected from Michigan Stadium. </li>
-                  <li><b>Skills Highlighted:</b> Python, Machine Learning</li>
-              </ul>
-          </li>
-          <li><b>EECS: 507</b>: Embedded Systems Research
-              <ul>
-                <li><b>Personal Insight:</b> A valuable course for exploring the foundations of research, though it confirmed that my strengths and interests lie outside the research path. </li>
-                <li><b>Skills Highlighted:</b> Research Experience</li>
-              </ul>
-          </li>
-          <li><b>EECS: 483</b>: Construction Compiler
-              <ul>
-                <li><b>Personal Insight:</b> Amazing class if you wanna learn about implementing efficient compilers. </li>
-                <li><b>Skills Highlighted:</b> OCaml, Rust, LLVM, x86 </li>
-
-              </ul>
-          </li>
-          <li><b>EECS: 473</b>: Advanced Embedded Systems
-            <ul>
-              <li><b>Personal Insight:</b> This class was intense, with an overwhelming amount of material packed into just six weeks. The remaining time was dedicated to working on our project. Overall, I often felt like I was in over my head, but in the end, it was incredibly rewarding!</li>
-              <li><b>Skills Highlighted:</b> C, C++, FreeRTOS, Linux Drivers, PCB Design </li>
-            </ul>
+    <section class="section" aria-labelledby="exp-title">
+      <h2 id="exp-title" class="fade-in animate-on-scroll">Experience Highlights</h2>
+      <ul class="jobs-grid">
+        <li class="job-card fade-in animate-on-scroll">
+          <a href="https://www.tp-link.com/us/" target="_blank" rel="noopener"><strong>TP-Link Systems Inc.</strong></a>
+          <div class="job-meta"><span>Software Engineer</span><span>June 2025 – Current</span></div>
         </li>
-        <li><b>EECS: 461</b>: Embedded Controls
-          <ul>
-              <li><b>Personal Insight:</b>This class mainly focused on microcontroller programming for the automotive industry, real-time operations, and adaptive cruise control design. A lot of math was involved! </li>
-              <li><b>Skills Highlighted:</b> C, CAN, MATLAB Simulink</li>
-          </ul>
-      </li>
-      <li><b>EECS: 373</b>: Intro Embedded Systems
-        <ul>
-          <li><b>Personal Insight:</b>This was the first embedded systems class I took, where I learned about GPIOs and various peripherals. This class was the main reason I got into embedded software. </li>
-          <li><b>Skills Highlighted:</b> C</li>
-        </ul>
-      </li>
-      <li><b>EECS: 370</b>: Computer Organization
-        <ul>
-            <li><b>Personal Insight:</b>I really enjoyed this class because it taught me how computers execute programs and ignited a passion for focusing more on the hardware side of my degree.</li>
-            <li><b>Skills Highlighted:</b> C, Assembly</li>
-        </ul>
-      </li>
-      <li><b>EECS: 281</b>: Data Structures & Algorithms
-        <ul>
-          <li><b>Personal Insight:</b> It was probably my most challenging yet rewarding decision to take this course, even though 
-                                       it was optional for my degree. I spent countless hours and nights not only debugging and rewriting algorithms but also studying. 
-                                       The amount of time I dedicated to this class was significantly more than any other class I took. Completing it felt incredibly rewarding 
-                                       and boosted my confidence, knowing that I passed one of the hardest CS weed-out classes at Michigan.</li>
-         <li><b>Skills Highlighted:</b> C++</li>
-        </ul>
-    </li>
+
+        <li class="job-card fade-in animate-on-scroll">
+          <a href="https://www.infineon.com/" target="_blank" rel="noopener"><strong>Infineon Technologies</strong></a>
+          <div class="job-meta"><span>Field Application Engineer</span><span>July 2024 – June 2025</span></div>
+        </li>
+
+        <li class="job-card fade-in animate-on-scroll">
+          <a href="https://www.accoai.com/" target="_blank" rel="noopener"><strong>AccoAI</strong></a>
+          <div class="job-meta"><span>Full Stack Intern</span><span>May 2023 – May 2024</span></div>
+        </li>
       </ul>
-  </section>
-  <section id="courses" class="section4">
-    <h2>Projects</h2>
-    <ul id="courses-list"> 
-      <li><b>Crowd Monitoring: Michigan Stadium</b>
-        <ul>
-         <li><b>Skills Highlighted:</b> Python, Machine Learning (Supervised Learning)</li>
-         <li><b>Duration:</b> January 2024 - May 2024</li>
-       </ul>
-  </li>
-      <li><b>Infineon Go: Smart Car Entry System</b>
-           <ul>
-            <li><b>Skills Highlighted:</b> C, FreeRTOS, Bluetooth, PWM Motor Controls, SPI, UART, I2C, Bluetooth, Swift IOS</li>
-            <li><b>Highlights:</b> Presented at Infineon's Oktoberfest</li>
-            <li><b>Duration:</b> September 2023 - December 2023</li>
-          </ul>
-     </li>
-     <li><b>Drone Delivery</b>
-      <ul>
-       <li><b>Skills Highlighted:</b> C++, TSP algorithms, MST  algorithms</li>
-       <li><b>Duration:</b> October 2023 - November 2023</li>
-     </ul>
-</li>
-    </ul>
+    </section>
 
-  </section>
+    <section class="section" aria-labelledby="interests-title">
+      <h2 id="interests-title" class="fade-in animate-on-scroll">Technical Interests</h2>
+      <p class="fade-in animate-on-scroll">Embedded firmware (C/C++), Rust experimentation, real-time systems, IoT cloud integration, and full-stack web development. I like projects that connect hardware, firmware, and web interfaces end-to-end.</p>
+    </section>
+  </main>
 
-  <section id="courses" class="section4">
-    <h2>Extracurriculars</h2>
-    <ul id="courses-list"> 
-      <li><b>University of Michigan Badminton Club</b>
-        <ul>
-         <li><b>Role:</b> Team Captain & Vice President</li>
-         <li><b>Duration:</b> Aug 2021 - May 2024</li>
-       </ul>
-  </li>
-  <li><b>IEEE: Institue of Electrical and Electronics Engineer</b>
-    <ul>
-     <li><b>Role:</b> Vice President</li>
-     <li><b>Duration:</b> Aug 2020 - May 2021</li>
-   </ul>
-</li>
-    </ul>
+  <script src="butoons.js" defer></script>
+</body>
 </html>

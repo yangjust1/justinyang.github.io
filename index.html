@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Justin Yang | Personal Website</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="pretty.css">
 </head>
 <body>
   <!-- Navigation Bar -->
   <header>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main">
       <a href="#home" class="nav-logo">Justin Yang</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#courses">Work Experience</a></li>
         <li><a href="#contact">Contact</a></li>
-        <!-- <li><a href="#resume">Resume</a></li> fix this shit later -->
+        <!-- <li><a href="#resume">Resume</a></li> fix this later -->
       </ul>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
-    <section id="home" class="section">
-      <h1 class="fade-in">Welcome to My Website</h1>
-      
-      <img src = "Me.jpg" width="300" height="300">
-      <!-- <P>
-        <a href="https://www.linkedin.com/in/yuki-kanazawa-aa12651b5" target="_blank"> 
-        Credits: Yuki Kanazawa ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ•̫͡•ʕ•̫͡•ʔ•̫͡•ʕ•̫͡•ʕ
-        </a>
+    <section id="home" class="section section-hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 class="fade-in animate-on-scroll">Welcome to My Website</h1>
+          <p class="lead fade-in animate-on-scroll">Computer engineer, software engineer, and space for interesting projects.</p>
+          <div class="hero-ctas fade-in animate-on-scroll">
+            <a href="aboutMe.html" class="umich-button" target="_blank" rel="noopener">
+              <img src="https://brand.umich.edu/assets/brand/style-guide/logo-guidelines/U-M_Logo-Hex.png" alt="Umich icon" class="umich-logo">
+              My Michigan Journey
+            </a>
+            <a href="fun.html" class="fun-button" target="_self">
+              <img src="banana.png" alt="Hobbies" class="fun-logo">
+              Hobbies & Interests
+            </a>
+          </div>
+        </div>
 
-      </P> -->
+        <div class="hero-avatar fade-in animate-on-scroll">
+          <img src="Me.jpg" alt="Justin Yang" width="300" height="300">
+        </div>
+      </div>
     </section>
+
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>Graduated from the University of Michigan
-         with a B.S.E in Computer Engineering with a concentration
-         in Embeddded System and Software Engineering. 
-     <br>
-        <a href="aboutMe.html" class="umich-button">
-          <img src="https://brand.umich.edu/assets/brand/style-guide/logo-guidelines/U-M_Logo-Hex.png" alt="Umich icon" class="umich-logo">
-          My Michigan Journey 
-        </a>
-    </a>
-    <a href="fun.html" class="fun-button">
-      <img src="banana.png" alt="funny" class="fun-logo">
-      Hobbies and Interest
-    </a>
-    </p>    
+      <h2 class="slide-in-left animate-on-scroll">About Me</h2>
+      <p class="fade-in animate-on-scroll">Graduated from the University of Michigan with a B.S.E. in Computer Engineering, concentrating in Embedded Systems and Software Engineering.</p>
     </section>
-    <section id="courses" class="section4">
-      <h2>Work Experience</h2>
-      <ul id="courses-list">
-        <li><a href="https://www.tp-link.com/us/" <b>TP-Link Systems Inc.</b> </li> </a> 
-        <ul>
-            <li><b>Role:</b> Software Engineer</li>
-            <li><b>Duration:</b> June 2025 - Current</li>
-        </ul>
-          <li><a href="https://www.infineon.com/" <b>Infineon Technologies</b> </li> </a> 
-              <ul>
-                  <li><b>Role:</b> Field Application Engineer</li>
-                  <li><b>Duration:</b> July 2024 - June 2025</li>
-              </ul>
-          </li>
-          <li><a href="https://www.accoai.com/" <b>AccoAI</b></li></a> 
-            <ul>
-                <li><b>Role:</b> Full Stack Software Engineering Intern</li>
-                <li><b>Duration:</b> May 2023 - May 2024</li>
-            </ul>
-            <li><a href="https://www.cubeworks.io/" <b>CubeWorks, Inc.</b> </li> </a> 
-              <ul>
-                  <li><b>Role:</b> Electrical Engineering Intern </li>
-                  <li><b>Duration:</b> April 2022 - May 2024</li>
-              </ul>
-          </li>
+
+    <section id="courses" class="section section-cards">
+      <h2 class="fade-in animate-on-scroll">Work Experience</h2>
+
+      <ul id="courses-list" class="jobs-grid">
+        <li class="job-card fade-in animate-on-scroll">
+          <a href="https://www.tp-link.com/us/" target="_blank" rel="noopener"><strong>TP-Link Systems Inc.</strong></a>
+          <div class="job-meta">
+            <span><strong>Role:</strong> Software Engineer</span>
+            <span><strong>Duration:</strong> June 2025 - Current</span>
+          </div>
         </li>
 
-    <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <p>Get in touch with me here.</p>
-      <a href="https://linkedin.com/in/justin-yang-8271971a7" target="_blank" class="linkedin-button">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="linkedin-logo">
-        Connect on LinkedIn
-      </a>
-      <a href="https://github.com/yangjust1" target="_blank" class="github-button">
-        <img src="github.png" alt="GitHub Logo" class="github-logo">
-        Follow on GitHub
-      </a>
+        <li class="job-card fade-in animate-on-scroll">
+          <a href="https://www.infineon.com/" target="_blank" rel="noopener"><strong>Infineon Technologies</strong></a>
+          <div class="job-meta">
+            <span><strong>Role:</strong> Field Application Engineer</span>
+            <span><strong>Duration:</strong> July 2024 - June 2025</span>
+          </div>
+        </li>
+
+        <li class="job-card fade-in animate-on-scroll">
+          <a href="https://www.accoai.com/" target="_blank" rel="noopener"><strong>AccoAI</strong></a>
+          <div class="job-meta">
+            <span><strong>Role:</strong> Full Stack Software Engineering Intern</span>
+            <span><strong>Duration:</strong> May 2023 - May 2024</span>
+          </div>
+        </li>
+
+        <li class="job-card fade-in animate-on-scroll">
+          <a href="https://www.cubeworks.io/" target="_blank" rel="noopener"><strong>CubeWorks, Inc.</strong></a>
+          <div class="job-meta">
+            <span><strong>Role:</strong> Electrical Engineering Intern</span>
+            <span><strong>Duration:</strong> April 2022 - May 2024</span>
+          </div>
+        </li>
+      </ul>
     </section>
-    
+
+    <section id="contact" class="section">
+      <h2 class="fade-in animate-on-scroll">Contact Me</h2>
+      <p class="fade-in animate-on-scroll">Get in touch with me here.</p>
+
+      <div class="contact-buttons fade-in animate-on-scroll">
+        <a href="https://linkedin.com/in/justin-yang-8271971a7" target="_blank" class="linkedin-button" rel="noopener">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="linkedin-logo">
+          Connect on LinkedIn
+        </a>
+        <a href="https://github.com/yangjust1" target="_blank" class="github-button" rel="noopener">
+          <img src="github.png" alt="GitHub Logo" class="github-logo">
+          Follow on GitHub
+        </a>
+      </div>
+    </section>
   </main>
 
-  <script src="butoons.js"></script>
+  <script src="butoons.js" defer></script>
 </body>
 </html>
